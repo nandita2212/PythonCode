@@ -1,5 +1,33 @@
-a=48
+//sequence is important in control flow
+a=int(input("enter no."))
 if(a<50):
   print("less than 50")
-else if(a<100):
+elif(a<100):
   print("less than 100")
+  
+//check even/odd
+a=int(input("enter no."))
+if(a%2==0):
+print("even")
+else:
+print("odd")
+
+//Do-while is not available in python
+//when you know the exact iteration then use  "For" loop.
+//when you dont know the no. of iteration then use "While" loop.
+
+a=int(input("enter no."))
+While(a>0):
+  print(a)
+  a=a-1
+
+for a in [1,2,3]:
+  print(a)
+  
+a="HELLO"
+for letter in a:
+  print(letter)
+  
+
+
+  
