@@ -28,6 +28,58 @@ a="HELLO"
 for letter in a:
   print(letter)
   
+import string
+for alpha in string.ascii_uppercase //lib having A-Z
+  if alpha in "AEIOU":
+    print(alpha,"Vowel")
+  else:
+    print(alpha,"Consonant")
+    
+//Slicing & Striding..game is on index number
+colors=["Red", "Green", "Blue", "Black", "White"]
+
+colors[0:2]// o/p: Red, Green
+colors[3:4]// o/p: Black....start index is 3
+colors[:3]// o/p: Red, Green, Blue.....by default start index is 0
+colors[:-1]// o/p: Red, Green, blue, black.... default start index is 0 and go till 2nd last
+colors[::-1]//o/p: White, black, blue, green, red..... reverse the items 
+
+Tupple, string = immutable/cant update
+List, dictionary, set = mutable/updatable
+
+colors.append("yellow")//taken as 1 element
+colors.extend("yellow")//each letter taken as 1 element so to avoid this 
+colors.extend(["yellow"])//taken as 1 element
+colors.extend([yellow, zink])// now the whole list will be added
+
+//Dictionary
+products[{'name':"A",'Price':20},
+          {'name':"B",'Price':10},
+          {'name':"C",'Price':5}].... print an element having price>10
+          
+for elem in products:
+  if(elem['price']>10):
+    print(elem)//o/p:{'name':"A",'Price':20}
+    print(elem(['name']))//o/p:A
+    
+//Word count problem
+sentence= Nandita is a girl Nandita is an awesome girl
+result=dict{}
+
+for word in sentence.split(','): //o/p: {'Nandita', 'is', 'a', 'girl', 'Nandita', 'is', 'an', 'awesome', 'girl'}
+  if word in result:
+    result[word]=result[word]+1
+  else:
+    result[word]=1
+print(result) //o/p: {Nandita:2, is:2, a:1, girl:2, an:1, awesome:1 }
+
+
+  
+
+
+
+
+
 
 
   
