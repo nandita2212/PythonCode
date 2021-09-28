@@ -28,3 +28,11 @@ print("new no.s:"a,b)
 
 a,b=b,a //tupple-untupple...most w=easiest way in python to do swaping
 
+//Area & Perimeter of a circle
+x=int(input("enter x-coordinate of centre:"))
+y=int(input("enter y-coordinate of centre:"))
+r=int(input("enter radius of a circle:"))
+Area=3.14*r**2
+print("Area of a circle:", Area)
+Perimeter=2*3.14*r
+print("perimeter of a circle:", perimeter)
