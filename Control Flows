@@ -1,0 +1,5 @@
+a=48
+if(a<50):
+  print("less than 50")
+else if(a<100):
+  print("less than 100")
