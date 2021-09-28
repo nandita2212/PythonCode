@@ -1,0 +1,30 @@
+//addition
+x=int(input("enter 1st num")) //Without 'int' the input is taken as string
+y=int(input("enter 2nd num"))
+print("sum of the 2 numbers:" x+y)
+
+//swapping....4-ways
+a=7
+b=6
+temp=a
+a=b
+b=temp
+
+a=int(input("val of a:"))
+b=int(input("val of b:"))
+print("original no.s:"a,b)
+temp=a
+a=b
+b=temp
+print("new no.s:"a,b)
+
+a=int(input("val of a:"))
+b=int(input("val of b:"))
+print("original no.s:"a,b)
+a=a+b
+b=a-b
+a=a-b
+print("new no.s:"a,b)
+
+a,b=b,a //tupple-untupple...most w=easiest way in python to do swaping
+
