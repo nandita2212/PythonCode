@@ -17,3 +17,34 @@ def removeduplicates(list1):
   return list2
   
 def removeduplicates([1,2,3,4,5,6,7,7,8])
+
+# Python code to illustrate Sending mail from 
+# your Gmail account
+
+import smtplib
+s = smtplib.SMTP('smtp.gmail.com', 587) //creates SMTP session by sending server & server code
+s.starttls() //start TLS security
+s.login("nandita.it2202@gmail.com", "Lumia520@") //authentication
+message = "Hello!"
+s.sendmail("nandita.it2202@gmail.com", "yorz.srikant@gmail.com", message) //sending mail
+s.quit() //terminating the session
+
+OR-------------------------------
+
+import smtplib
+  
+# list of email_id to send the mail
+li = ["nandita.it2202@gmail.com", "yorz.nandita2212@gmail.com"]
+  
+for dest in li:
+    s = smtplib.SMTP('smtp.gmail.com', 587)
+    s.starttls()
+    s.login("nandita.it2202@gmail.com", "Lumia520@")
+    message = "Hello!"
+    s.sendmail("nandita.it2202@gmail.com", dest, message)
+    s.quit()
+    
+
+  
+
+
