@@ -1,9 +1,9 @@
-//addition
+//addition-------------------------------
 x=int(input("enter 1st num")) //Without 'int' the input is taken as string
 y=int(input("enter 2nd num"))
 print("sum of the 2 numbers:" x+y)
 
-//swapping....4-ways
+//swapping....4-ways-------------------------------------
 a=7
 b=6
 temp=a
@@ -28,7 +28,7 @@ print("new no.s:"a,b)
 
 a,b=b,a //tupple-untupple...most w=easiest way in python to do swaping
 
-//Area & Perimeter of a circle
+//Area & Perimeter of a circle----------------------------
 x=int(input("enter x-coordinate of centre:"))
 y=int(input("enter y-coordinate of centre:"))
 r=int(input("enter radius of a circle:"))
@@ -36,3 +36,8 @@ Area=3.14*r**2
 print("Area of a circle:", Area)
 Perimeter=2*3.14*r
 print("perimeter of a circle:", perimeter)
+
+//Python: Centigrade and Fahrenheit Temperatures-------------------
+fahrenheit = float(input("Enter temperature in fahrenheit: "))
+celsius = (fahrenheit - 32) * 5/9
+print('%.2f Fahrenheit is: %0.2f Celsius' %(fahrenheit, celsius))
